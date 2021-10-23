@@ -4,8 +4,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>kotlin-console-application</artifactId>
-    <groupId>com.davioooh</groupId>
+    <artifactId>fizzo-buzzo</artifactId>
+    <groupId>com.davioooh.fizzobuzzo</groupId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
@@ -90,10 +90,9 @@
                 <artifactId>exec-maven-plugin</artifactId>
                 <version>1.6.0</version>
                 <configuration>
-                    <mainClass>MainKt</mainClass>
+                    <mainClass>com.davioooh.fizzobuzzo.MainKt</mainClass>
                 </configuration>
             </plugin>
-
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-assembly-plugin</artifactId>
@@ -108,7 +107,7 @@
                             <archive>
                                 <manifest>
                                     <mainClass>
-                                        MainKt
+                                        com.davioooh.fizzobuzzo.MainKt
                                     </mainClass>
                                 </manifest>
                             </archive>
@@ -120,7 +119,6 @@
                     </execution>
                 </executions>
             </plugin>
-
         </plugins>
     </build>
 </project>
